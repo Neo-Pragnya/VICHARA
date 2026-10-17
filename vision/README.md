@@ -1,3 +1,10 @@
+---
+website: public
+title: Vision
+description: Keep VICHARA's purpose, principles, and direction in view.
+status: Theme overview
+---
+
 # 🧭 Vision
 
 Vision keeps VICHARA's purpose and direction in view: why this knowledge atlas

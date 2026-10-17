@@ -1,0 +1,113 @@
+---
+import { getCollection, render } from "astro:content";
+import Mermaid from "../../components/Mermaid.astro";
+import SiteLayout from "../../components/SiteLayout.astro";
+import {
+  displayTitle,
+  documentHref,
+  isWebsitePublished,
+  routeSlug,
+  sourcePath,
+  themeForDocument,
+} from "../../lib/docs";
+
+const documents = (await getCollection("docs"))
+  .filter(isWebsitePublished)
+  .sort((left, right) => left.id.localeCompare(right.id));
+
+export async function getStaticPaths() {
+  const entries = (await getCollection("docs"))
+    .filter(isWebsitePublished)
+    .sort((left, right) => left.id.localeCompare(right.id));
+  return entries.map((entry) => ({
+    params: { slug: routeSlug(entry.id) },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content, headings } = await render(entry);
+const title = displayTitle(
+  entry.id,
+  entry.data.title ?? headings.find((heading) => heading.depth === 1)?.text,
+);
+const theme = themeForDocument(entry.id);
+const description =
+  entry.data.description ??
+  entry.data.status ??
+  `A VICHARA ${theme} document.`;
+const siblings = documents.filter(
+  (document) => themeForDocument(document.id) === theme,
+);
+---
+
+<SiteLayout title={title} description={description}>
+  <main class="doc-shell">
+    <aside class="doc-sidebar" aria-label="Documentation navigation">
+      <a
+        class="back-link"
+        href={documentHref("index", import.meta.env.BASE_URL)}
+      >
+        ← All documentation
+      </a>
+      <p class="sidebar-heading">{theme}</p>
+      <nav>
+        {
+          siblings.map((document) => {
+            const siblingTitle = displayTitle(
+              document.id,
+              document.data.title ??
+                document.id.split("/").at(-1)?.replace(/-/g, " "),
+            );
+            const current = document.id === entry.id;
+
+            return (
+              <a
+                href={documentHref(document.id, import.meta.env.BASE_URL)}
+                aria-current={current ? "page" : undefined}
+                class:list={["sidebar-link", { active: current }]}
+              >
+                {siblingTitle}
+              </a>
+            );
+          })
+        }
+      </nav>
+    </aside>
+    <article class="doc-article">
+      <p class="eyebrow">{theme}</p>
+      <div class="doc-status">
+        {entry.data.status ?? "Repository documentation"}
+      </div>
+      <Content />
+      {entry.body?.includes("```mermaid") && <Mermaid />}
+      <footer class="doc-source">
+        <span>🗃️ Source: <code>{entry.id}</code></span>
+        <a
+          href={`https://github.com/Neo-Pragnya/VICHARA/blob/main/${sourcePath(entry.id)}`}
+        >
+          View source ↗
+        </a>
+      </footer>
+    </article>
+    {
+      headings.some((heading) => heading.depth > 1) && (
+        <aside class="doc-toc" aria-label="On this page">
+          <p class="sidebar-heading">On this page</p>
+          <nav>
+            {headings
+              .filter((heading) => heading.depth > 1)
+              .map((heading) => (
+                <a
+                  class:list={["toc-link", { nested: heading.depth > 2 }]}
+                  href={`#${heading.slug}`}
+                >
+                  {heading.text}
+                </a>
+              ))}
+          </nav>
+        </aside>
+      )
+    }
+  </main>
+</SiteLayout>

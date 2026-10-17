@@ -1,3 +1,10 @@
+---
+website: public
+title: "Pensieve: Ideation and Implementation Plan"
+description: Problem framing, proposed direction, implementation phases, open decisions, and research gates.
+status: Planning draft — not approved as a finished article
+---
+
 # Pensieve: Ideation and Implementation Plan
 
 - **Status:** Planning draft; not approved for publication as a finished article.

@@ -1,3 +1,10 @@
+---
+website: public
+title: Theme-Based Sources and Website Boundary
+description: Why VICHARA separates thematic source material from its website application.
+status: Architecture decision record
+---
+
 # ADR-001: Theme-based sources and website application boundary
 
 - **Status:** Accepted

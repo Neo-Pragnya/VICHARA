@@ -1,3 +1,10 @@
+---
+website: public
+title: Products
+description: Follow product explorations from user needs through research and prototypes.
+status: Theme overview
+---
+
 # 🚀 Products
 
 Products are places where ideas meet people, needs, constraints, and

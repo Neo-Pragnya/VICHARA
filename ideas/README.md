@@ -1,3 +1,10 @@
+---
+website: public
+title: Ideas
+description: Capture early observations, questions, and possibilities.
+status: Theme overview
+---
+
 # 💡 Ideas
 
 Ideas are welcome here before they are polished. Capture the question, spark,

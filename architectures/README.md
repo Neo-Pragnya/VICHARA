@@ -1,3 +1,10 @@
+---
+website: public
+title: Architectures
+description: System designs, decision records, and the reasoning behind them.
+status: Theme overview
+---
+
 # 🏗️ Architectures
 
 Architecture describes how a system is shaped, why important boundaries

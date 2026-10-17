@@ -1,3 +1,10 @@
+---
+website: public
+title: Conceptualization
+description: Develop ideas into explicit concepts, models, and relationships.
+status: Theme overview
+---
+
 # 🧠 Conceptualization
 
 Turn a promising spark into a clear concept: name it, define its boundaries,

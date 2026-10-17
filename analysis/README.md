@@ -1,3 +1,10 @@
+---
+website: public
+title: Analysis
+description: Compare, inspect, and interpret ideas, systems, and evidence.
+status: Theme overview
+---
+
 # 🔎 Analysis
 
 Analysis is where we compare, inspect, and interpret ideas, systems, and

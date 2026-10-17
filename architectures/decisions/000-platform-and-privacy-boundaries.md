@@ -1,3 +1,10 @@
+---
+website: public
+title: VICHARA Platform and Privacy Boundaries
+description: The initial platform and privacy decisions for the VICHARA bootstrap.
+status: Architecture decision record
+---
+
 # ADR-000: VICHARA Platform and Privacy Boundaries
 
 - **Status:** Accepted

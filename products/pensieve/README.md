@@ -1,3 +1,10 @@
+---
+website: public
+title: Pensieve
+description: The first VICHARA product exploration, currently at the planning stage.
+status: Planning topic overview
+---
+
 # 🧠 Pensieve
 
 **Status:** 🟡 Planning — these materials are not publication-ready.

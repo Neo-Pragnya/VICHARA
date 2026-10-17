@@ -190,15 +190,40 @@ This is the **intended technical direction**. The currently implemented website 
 |:--|:--|:--|
 | 🗂️ Knowledge organization | Theme-based folders are in place | Document consistent content conventions |
 | 🚀 First product exploration | Pensieve is present as the first topic | Connect product material to its research and architecture |
-| 🌐 Website | Bootstrap Astro site exists | Implement structured content rendering |
-| 🔐 Publication safety | Publication-safe rendering is **not implemented** | Enforce public/private filtering and build gates |
-| 🔎 Discovery | Rich discovery is **planned** | Add search and browsable content views |
+| 🌐 Website | Astro site renders explicitly approved Markdown documents with theme navigation and search | Expand content through reviewed `website: public` frontmatter |
+| 🔐 Publication boundary | Website pages require explicit per-document opt-in; repo itself is public | Keep unpublished drafts out of Pages output |
+| 🔎 Discovery | Static document catalog and client-side title/topic/description search are available | Add richer indexes and relationship navigation |
 | 🕸️ Knowledge graph | **Planned** | Generate and validate typed relationships |
 | 📐 Platform specifications | Expected at `architectures/vichara/specs/`; may need restoration | Restore and review spec pack before implementation |
-| 🚀 Hosting | GitHub Pages deployment **not configured** | Establish CI/CD after publication safety is verified |
+| 🚀 Hosting | Production deployment workflow publishes from `main` after Pages is enabled in repository settings | Merge an approved change into `main` to publish |
 
 > [!WARNING]
-> **No private-content publishing guarantee exists yet.** Until the publishing pipeline is implemented and tested, do not place secrets, credentials, personal information, or material that must remain private in this repository or its generated website artifacts. A `draft` label alone is not a security boundary.
+> **The repository is public.** The website only renders Markdown explicitly opted in with `website: public`, but this does not make other Git-tracked files private. Never commit secrets, credentials, personal information, or confidential drafts here.
+
+## 🌐 What the website will be
+
+The website is the reader-friendly front door to the knowledge themes: an
+editorial home page, a searchable atlas, readable Markdown articles, and
+navigation from one topic to another. Markdown remains canonical in Git; the
+static site is generated from files that explicitly opt in to website
+publication.
+
+```mermaid
+flowchart LR
+    S["🗂️ Theme Markdown"] -->|"website: public"| V["✅ Astro content loader"]
+    V --> M["🧼 Sanitized Markdown"]
+    M --> R["📖 Static topic pages"]
+    M --> C["🔎 Searchable catalog"]
+    R --> P["🌐 GitHub Pages"]
+    C --> P
+    D["📝 Draft or unmarked file"] -. "excluded from generated pages" .-> V
+```
+
+The initial experience includes theme landing pages, per-document reading
+pages, contextual navigation, table of contents, Mermaid diagrams, and a
+small client-side catalog search. It does not yet include the planned
+knowledge graph, full-text search engine, comments, authoring UI, or runtime
+backend.
 
 ## 🛤️ The road ahead
 
@@ -248,7 +273,38 @@ npm ci
 npm run dev
 ```
 
-The local dev server address is displayed by Astro when it starts.
+The local dev server address is displayed by Astro when it starts. You can
+build or preview from any branch; a merge into `main` is **not** required for
+local development or branch validation.
+
+### How publishing works
+
+| Where you are | What happens |
+|---|---|
+| Local checkout, any branch | `npm run dev` serves the site; `npm run build` creates `website/dist/` |
+| Feature branch push or pull request | CI runs checks and builds the site; it does not publish production |
+| Push or merge to `main` | GitHub Actions builds and deploys the site to GitHub Pages |
+
+The expected project-site URL is
+[`https://neo-pragnya.github.io/VICHARA/`](https://neo-pragnya.github.io/VICHARA/),
+once GitHub Pages is enabled for the repository and the first deployment
+succeeds. Until then, the branch build is a test artifact, not a live site.
+
+To add a Markdown document to the website, include this frontmatter and commit
+it under one of the root theme folders:
+
+```yaml
+---
+website: public
+title: A reader-friendly title
+description: A short summary for the document catalog.
+status: Reviewed reference
+---
+```
+
+Documents default to `website: draft` when the field is omitted, and are
+excluded from generated pages. This is a publication switch, **not** a privacy
+control: all files in this public GitHub repository remain publicly readable.
 
 ### Check your changes
 

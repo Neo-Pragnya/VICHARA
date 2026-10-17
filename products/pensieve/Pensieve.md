@@ -1,3 +1,10 @@
+---
+website: public
+title: Designing Full-Stack Instrumentation for an AI Chat Application
+description: Long-form source exploration for the Pensieve product concept; unverified and not implementation-ready.
+status: Source reference — unverified exploration
+---
+
 # 🧠 Designing Full-Stack Instrumentation for an AI Chat Application
 
 > **From a click on a ShadCN button → to a user question → retrieval → generation → citations → feedback → product analytics → distributed traces.**

@@ -1,3 +1,10 @@
+---
+website: public
+title: Hypothesis
+description: State testable claims, predictions, and the evidence that could revise them.
+status: Theme overview
+---
+
 # 🧪 Hypothesis
 
 A hypothesis is a claim we can examine—not a conclusion dressed up as a

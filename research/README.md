@@ -1,3 +1,10 @@
+---
+website: public
+title: Research
+description: Gather, evaluate, and connect sources and evidence.
+status: Theme overview
+---
+
 # 📚 Research
 
 Research gathers sources and evidence to help answer a question. Preserve the
