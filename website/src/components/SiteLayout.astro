@@ -1,0 +1,42 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "A living atlas of questions, ideas, and evidence." } =
+  Astro.props;
+const base = import.meta.env.BASE_URL;
+const homeHref = base;
+const docsHref = `${base}docs/`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f4f6f2" />
+    <title>{title} · VICHARA</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href={homeHref} aria-label="VICHARA home">
+        <span class="brand-mark" aria-hidden="true">V</span>
+        <span>VICHARA<small>Where Curiosity Becomes Creation</small></span>
+      </a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href={docsHref}>Knowledge atlas</a>
+        <a href="https://github.com/Neo-Pragnya/VICHARA">GitHub</a>
+      </nav>
+    </header>
+    <slot />
+    <footer class="site-footer">
+      <span>🌱 Think openly. Investigate rigorously. Connect generously.</span>
+      <a href="https://github.com/Neo-Pragnya/VICHARA">Open source on GitHub ↗</a>
+    </footer>
+  </body>
+</html>

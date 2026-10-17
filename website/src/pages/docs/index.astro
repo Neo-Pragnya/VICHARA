@@ -1,0 +1,118 @@
+---
+import { getCollection } from "astro:content";
+import SiteLayout from "../../components/SiteLayout.astro";
+import {
+  displayTitle,
+  documentHref,
+  isWebsitePublished,
+  themeForDocument,
+} from "../../lib/docs";
+
+const documents = (await getCollection("docs"))
+  .filter(isWebsitePublished)
+  .sort((left, right) => left.id.localeCompare(right.id));
+const themeNames: Record<string, string> = {
+  products: "🚀 Products",
+  ideas: "💡 Ideas",
+  vision: "🧭 Vision",
+  architectures: "🏗️ Architectures",
+  conceptualization: "🧠 Conceptualization",
+  hypothesis: "🧪 Hypothesis",
+  analysis: "🔎 Analysis",
+  research: "📚 Research",
+};
+---
+
+<SiteLayout
+  title="Knowledge atlas"
+  description="Browse VICHARA's ideas, products, research, and architecture."
+>
+  <main class="page-shell">
+    <section class="page-heading">
+      <p class="eyebrow">Explore VICHARA</p>
+      <h1>Knowledge atlas</h1>
+      <p>
+        Follow a question through ideas, evidence, experiments, and the things
+        we build. These pages are generated from Markdown in the repository's
+        theme folders.
+      </p>
+    </section>
+
+    <label class="search-box">
+      <span>🔎 Search the documentation</span>
+      <input
+        type="search"
+        id="docs-search"
+        placeholder="Try “Pensieve” or “research”"
+        autocomplete="off"
+      />
+    </label>
+
+    <p class="search-count" aria-live="polite">
+      Showing <span id="docs-count">{documents.length}</span> documents
+    </p>
+
+    <div class="theme-grid" id="docs-list">
+      {
+        documents.map((document) => {
+          const theme = themeForDocument(document.id);
+          const isIndex = document.id.endsWith("/index");
+          const pathParts = document.id.split("/");
+          const section = pathParts.length > 2 ? pathParts[1] : "";
+          const title = displayTitle(
+            document.id,
+            document.data.title ??
+              (document.body ?? "").match(/^#\s+(.+)$/m)?.[1],
+          );
+          const description =
+            document.data.description ??
+            document.data.status ??
+            `Explore ${title.toLowerCase()} in the VICHARA ${theme} theme.`;
+          const status =
+            document.data.status ??
+            (isIndex ? "Theme overview" : "Reference");
+
+          return (
+            <a
+              class="doc-card"
+              href={documentHref(document.id, import.meta.env.BASE_URL)}
+              data-doc-card
+              data-search={`${theme} ${section} ${title} ${description}`.toLowerCase()}
+            >
+              <span class="card-theme">{themeNames[theme] ?? theme}</span>
+              <span class="card-title">{title}</span>
+              <span class="card-description">{description}</span>
+              <span class="card-meta">{status} <span aria-hidden="true">→</span></span>
+            </a>
+          );
+        })
+      }
+    </div>
+    <p class="empty-search" id="empty-search" hidden>
+      No pages matched that search. Try another topic or phrase.
+    </p>
+  </main>
+</SiteLayout>
+
+<script>
+  const search = document.querySelector<HTMLInputElement>("#docs-search");
+  const cards = Array.from(
+    document.querySelectorAll<HTMLElement>("[data-doc-card]"),
+  );
+  const count = document.querySelector<HTMLElement>("#docs-count");
+  const empty = document.querySelector<HTMLElement>("#empty-search");
+
+  search?.addEventListener("input", () => {
+    const query = search.value.trim().toLowerCase();
+    let visible = 0;
+
+    for (const card of cards) {
+      const matches = card.dataset.search?.includes(query) ?? false;
+      card.hidden = !matches;
+      if (matches) visible += 1;
+    }
+
+    if (count) count.textContent = String(visible);
+    if (empty) empty.hidden = visible !== 0;
+  });
+</script>
