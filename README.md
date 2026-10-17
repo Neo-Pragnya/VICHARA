@@ -2,7 +2,7 @@
 
 # 🧭 VICHARA
 
-### विचार · *Where Curiosity Becomes Creation*
+### *Where Curiosity Becomes Creation*
 
 **V**ision · **I**magination · **C**onceptualization · **H**ypothesis · **A**nalysis · **R**esearch · **A**rchitecture
 
@@ -43,7 +43,7 @@ Most repositories capture **the final artifact**. Most blogs capture **the polis
 
 ## 🪷 The philosophy
 
-*Vicāra* (विचार) is a Sanskrit word associated with thought, consideration, examination, and inquiry. Here it becomes a simple principle:
+VICHARA is guided by thoughtful inquiry, careful examination, and open-minded consideration. That becomes a simple principle:
 
 > **Think openly. Investigate rigorously. Connect generously. Build deliberately. Revise continuously.**
 
