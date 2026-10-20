@@ -142,9 +142,17 @@ a {
   line-height: 0.99;
 }
 
-.hero h1 span {
+.hero h1 .h1-accent {
   color: var(--green);
   font-style: italic;
+}
+
+/* motion-kit text effects in VICHARA's greens; hovered letters slip into italic */
+:root {
+  --mk-hot: #6fb58a;
+  --mk-w0: 500;
+  --mk-wd: 300;
+  --mk-alt-style: italic;
 }
 
 .hero-description {
@@ -675,22 +683,6 @@ a {
   color: inherit;
 }
 
-.mermaid-diagram {
-  max-width: 100%;
-  margin: 1.5rem 0;
-  overflow-x: auto;
-  padding: 1rem;
-  border: 1px solid var(--line);
-  border-radius: 0.75rem;
-  background: #fbfcfa;
-  text-align: center;
-}
-
-.mermaid-diagram svg {
-  max-width: 100%;
-  height: auto;
-}
-
 .diagram-error {
   color: #9f382e !important;
   font-size: 0.85rem;
@@ -949,4 +941,156 @@ a {
 .doc-card:hover .card-glyph,
 .doc-card:focus-visible .card-glyph {
   color: #cfe5d5;
+}
+
+/* the rotating word sits on its own line so changing word lengths never re-wrap the headline */
+.hero h1 .h1-accent .mk-words {
+  display: block;
+}
+
+/* ---------------------------------------------------------------- Mermaid */
+:root {
+  /* VICHARA greens for diagrams, plus the template tokens this section expects */
+  --surface: var(--white);
+  --surface-2: var(--green-soft);
+  --code-bg: #eef3ee;
+  --radius: 14px;
+  --warn: #8f450b;
+  --mmd-node: var(--green-soft);
+  --mmd-border: var(--green);
+  --mmd-alt: #f3f8e6;
+  --mmd-alt-2: #e7f3f1;
+  --mmd-note: #f3f8e6;
+  --mmd-cluster: var(--paper);
+  --mmd-cluster-border: var(--line);
+}
+
+:root[data-theme="dark"] {
+  --mmd-node: var(--surface-2);
+  --mmd-border: var(--lemon);
+  --mmd-cluster: var(--bg-2);
+}
+
+pre.mermaid-src {
+  /* placeholder until the diagram renders: a shimmer, not a flash of raw source */
+  position: relative;
+  min-height: 140px;
+  max-height: 260px;
+  overflow: hidden;
+  color: transparent;
+  background:
+    linear-gradient(100deg, transparent 30%, color-mix(in srgb, var(--surface) 70%, transparent) 50%, transparent 70%) 0 0 / 200% 100%,
+    var(--surface-2);
+  animation: mmd-shimmer 1.6s linear infinite;
+  user-select: none;
+}
+
+pre.mermaid-src.mermaid-failed {
+  color: inherit;
+  max-height: none;
+  background: var(--code-bg);
+  animation: none;
+  user-select: auto;
+}
+
+@keyframes mmd-shimmer {
+  to {
+    background-position: -200% 0, 0 0;
+  }
+}
+
+.mermaid-diagram {
+  position: relative;
+  overflow-x: auto;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px 14px 14px;
+  margin: 16px 0;
+  text-align: center;
+}
+
+.mermaid-diagram svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.mermaid-expand,
+.mermaid-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font: 600 0.72rem/1 var(--font);
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--muted);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.mermaid-diagram:hover .mermaid-expand,
+.mermaid-expand:focus-visible,
+.mermaid-close {
+  opacity: 1;
+}
+
+@media (hover: none) {
+  .mermaid-expand {
+    opacity: 1;
+  }
+}
+
+.mermaid-dialog {
+  width: min(96vw, 1400px);
+  max-height: 92vh;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 44px 20px 20px;
+  overflow: auto;
+}
+
+.mermaid-dialog::backdrop {
+  background: rgb(10 14 30 / 55%);
+  backdrop-filter: blur(3px);
+}
+
+.mermaid-dialog svg {
+  width: 100%;
+  height: auto;
+  max-width: none !important;
+}
+
+.diagram-error {
+  font-size: 0.85rem;
+  color: var(--warn);
+}
+
+/* ---------------------------------------------------------------- Shiki: light and dark code themes */
+.astro-code,
+.astro-code span {
+  color: var(--shiki-light);
+}
+
+:root[data-theme="dark"] .astro-code,
+:root[data-theme="dark"] .astro-code span {
+  color: var(--shiki-dark);
+}
+
+.astro-code {
+  background: var(--code-bg) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  pre.mermaid-src {
+    animation: none;
+  }
+}
+
+/* living diagrams: green pulses on hover */
+svg.dfx {
+  --fx-hot: #2f8a5f;
 }

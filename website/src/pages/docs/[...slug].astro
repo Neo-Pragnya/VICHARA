@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from "astro:content";
 import Mermaid from "../../components/Mermaid.astro";
+import { hasMermaid } from "../../lib/remark-mermaid";
 import SiteLayout from "../../components/SiteLayout.astro";
 import {
   displayTitle,
@@ -80,7 +81,7 @@ const siblings = documents.filter(
         {entry.data.status ?? "Repository documentation"}
       </div>
       <Content />
-      {entry.body?.includes("```mermaid") && <Mermaid />}
+      {hasMermaid(entry.body) && <Mermaid />}
       <footer class="doc-source">
         <span>🗃️ Source: <code>{entry.id}</code></span>
         <a

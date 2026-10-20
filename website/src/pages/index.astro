@@ -19,7 +19,7 @@ const featured = documents.find((document) =>
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow">A living knowledge atlas</p>
-        <h1>Where curiosity<br /><span data-scramble>becomes creation.</span></h1>
+        <h1><span class="h1-lead" data-particles="#17231e,#285c43">Where curiosity</span><br /><span class="h1-accent">becomes <span data-words="creation.|evidence.|experiments.|architecture." data-colors="#285c43,#6fb58a">creation.</span></span></h1>
         <p class="hero-description">
           Follow the path from a spark of an idea to evidence, experiments,
           architecture, and things worth building.
@@ -55,7 +55,7 @@ const featured = documents.find((document) =>
     <section class="lens-section" aria-labelledby="lenses-title">
       <div class="section-heading" data-reveal>
         <p class="eyebrow">A constellation, not a checklist</p>
-        <h2 id="lenses-title">Seven lenses on one evolving body of knowledge.</h2>
+        <h2 id="lenses-title" data-letters>Seven lenses on one evolving body of knowledge.</h2>
       </div>
       <div class="lens-grid">
         <a data-tilt data-reveal style="--d:0.00s" href={`${import.meta.env.BASE_URL}docs/vision/`}><svg class="lens-glyph" viewBox="0 0 100 100" data-morph="circle>star" aria-hidden="true"></svg><span>🧭</span><strong>Vision</strong><small>Why it matters</small></a>
@@ -72,7 +72,7 @@ const featured = documents.find((document) =>
     <section class="featured-section">
       <div>
         <p class="eyebrow">First product exploration</p>
-        <h2>Meet Pensieve</h2>
+        <h2 data-letters>Meet Pensieve</h2>
         <p>
           An early exploration into how an AI product might connect user
           journeys with the technical events behind them. The plan is a
