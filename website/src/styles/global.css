@@ -817,3 +817,136 @@ a {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ---------------------------------------------------------------- interactive layer (motion-kit) */
+.hero-art canvas[data-field] {
+  border-radius: 50%;
+  -webkit-mask-image: radial-gradient(circle, #000 40%, transparent 72%);
+  mask-image: radial-gradient(circle, #000 40%, transparent 72%);
+  opacity: 0.75;
+}
+
+.hero-art {
+  pointer-events: auto;
+}
+
+.orbit {
+  animation: vichara-orbit 60s linear infinite;
+}
+
+.orbit-two {
+  animation-duration: 80s;
+  animation-direction: reverse;
+}
+
+.orbit-three {
+  animation-duration: 120s;
+}
+
+@keyframes vichara-orbit {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
+.orbit-center {
+  overflow: hidden;
+  z-index: 1;
+}
+
+.orbit-center > span {
+  position: relative;
+}
+
+.orbit-glyph {
+  position: absolute;
+  inset: 8%;
+  width: 84%;
+  height: 84%;
+  color: #d8eadc;
+}
+
+.orbit-label {
+  z-index: 2;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.lens-grid a {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  --mk-spot: #e8f2eb;
+}
+
+.lens-glyph {
+  position: absolute;
+  z-index: -1;
+  top: -18px;
+  right: -18px;
+  width: 92px;
+  height: 92px;
+  color: #e8f2eb;
+  transition: color 0.4s ease;
+}
+
+.lens-grid a:hover .lens-glyph,
+.lens-grid a:focus-visible .lens-glyph {
+  color: #cfe5d5;
+}
+
+.lens-grid a:nth-child(3n + 2) .lens-glyph { color: #fff4cc; }
+.lens-grid a:nth-child(3n + 3) .lens-glyph { color: #dff5f2; }
+.lens-grid a:nth-child(3n + 2):hover .lens-glyph { color: #ffe68a; }
+.lens-grid a:nth-child(3n + 3):hover .lens-glyph { color: #b9ece6; }
+
+.featured-note {
+  position: relative;
+  isolation: isolate;
+}
+
+.featured-glyph {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 40%;
+  width: 9rem;
+  height: 9rem;
+  transform: translate(-50%, -50%);
+  color: #d4e8d9;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orbit {
+    animation: none;
+  }
+}
+
+.mk-static .orbit {
+  animation: none;
+}
+
+.doc-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  --mk-spot: #e8f2eb;
+}
+
+.card-glyph {
+  position: absolute;
+  z-index: -1;
+  top: -14px;
+  right: -14px;
+  width: 64px;
+  height: 64px;
+  color: #e8f2eb;
+  transition: color 0.4s ease;
+}
+
+.doc-card:hover .card-glyph,
+.doc-card:focus-visible .card-glyph {
+  color: #cfe5d5;
+}

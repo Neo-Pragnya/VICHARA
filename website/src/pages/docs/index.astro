@@ -21,6 +21,17 @@ const themeNames: Record<string, string> = {
   analysis: "🔎 Analysis",
   research: "📚 Research",
 };
+// Each theme has its own shape that blooms on hover (motion-kit).
+const themeGlyphs: Record<string, string> = {
+  vision: "circle>star",
+  ideas: "blob>flower",
+  conceptualization: "squircle>spark",
+  hypothesis: "triangle>star6",
+  analysis: "hex>flower8",
+  research: "diamond>star4",
+  architectures: "octagon>gear",
+  products: "blob2>star",
+};
 ---
 
 <SiteLayout
@@ -77,8 +88,10 @@ const themeNames: Record<string, string> = {
               class="doc-card"
               href={documentHref(document.id, import.meta.env.BASE_URL)}
               data-doc-card
+              data-tilt="4"
               data-search={`${theme} ${section} ${title} ${description}`.toLowerCase()}
             >
+              <svg class="card-glyph" viewBox="0 0 100 100" data-morph={themeGlyphs[theme] ?? "blob>star"} aria-hidden="true"></svg>
               <span class="card-theme">{themeNames[theme] ?? theme}</span>
               <span class="card-title">{title}</span>
               <span class="card-description">{description}</span>

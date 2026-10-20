@@ -21,6 +21,7 @@ const docsHref = `${base}docs/`;
     <meta name="description" content={description} />
     <meta name="theme-color" content="#f4f6f2" />
     <title>{title} · VICHARA</title>
+    <link rel="stylesheet" href={`${base}motion-kit/motion-kit.css`} />
   </head>
   <body>
     <header class="site-header">
@@ -38,5 +39,6 @@ const docsHref = `${base}docs/`;
       <span>🌱 Think openly. Investigate rigorously. Connect generously.</span>
       <a href="https://github.com/Neo-Pragnya/VICHARA">Open source on GitHub ↗</a>
     </footer>
+    <script is:inline src={`${base}motion-kit/motion-kit.js`} defer></script>
   </body>
 </html>
