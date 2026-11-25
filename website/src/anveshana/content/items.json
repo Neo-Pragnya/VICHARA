@@ -1,0 +1,134 @@
+[
+  {
+    "id": "fawn-1",
+    "familyId": "fawn",
+    "order": 1,
+    "prompt": "I went along with another person before checking what I wanted."
+  },
+  {
+    "id": "flag-1",
+    "familyId": "flag",
+    "order": 2,
+    "prompt": "A change in a face, voice or room quickly took my attention."
+  },
+  {
+    "id": "flight-1",
+    "familyId": "flight",
+    "order": 3,
+    "prompt": "I put distance between myself and the situation so I could manage it."
+  },
+  {
+    "id": "forearm-1",
+    "familyId": "forearm",
+    "order": 4,
+    "prompt": "I prepared a reply or a backup plan in advance so I could handle what might happen."
+  },
+  {
+    "id": "freeze-1",
+    "familyId": "freeze",
+    "order": 5,
+    "prompt": "I knew what I wanted to do and felt unable to start moving or speaking."
+  },
+  {
+    "id": "flock-1",
+    "familyId": "flock",
+    "order": 6,
+    "prompt": "I made contact with someone I trusted so I could handle the situation with support."
+  },
+  {
+    "id": "fight-1",
+    "familyId": "fight",
+    "order": 7,
+    "prompt": "I made a clear objection to interrupt what was happening."
+  },
+  {
+    "id": "filter-1",
+    "familyId": "filter",
+    "order": 8,
+    "prompt": "I changed a sound, texture or rhythm to make the situation easier to stay with."
+  },
+  {
+    "id": "float-1",
+    "familyId": "float",
+    "order": 9,
+    "prompt": "Parts of the situation felt far away while I was still there."
+  },
+  {
+    "id": "flop-1",
+    "familyId": "flop",
+    "order": 10,
+    "prompt": "Effort dropped enough that I needed to stop and let someone else carry the next part."
+  },
+  {
+    "id": "fathom-1",
+    "familyId": "fathom",
+    "order": 11,
+    "prompt": "I tried to work out what the experience meant and how I wanted to respond next."
+  },
+  {
+    "id": "fawn-2",
+    "familyId": "fawn",
+    "order": 12,
+    "prompt": "I apologized or softened what I said to keep things smooth."
+  },
+  {
+    "id": "flag-2",
+    "familyId": "flag",
+    "order": 13,
+    "prompt": "I kept checking for signs that something was about to go wrong."
+  },
+  {
+    "id": "flight-2",
+    "familyId": "flight",
+    "order": 14,
+    "prompt": "I stayed away from a place, person or task because of how I expected it to feel."
+  },
+  {
+    "id": "forearm-2",
+    "familyId": "forearm",
+    "order": 15,
+    "prompt": "I went over what I would say or do more times than the situation needed."
+  },
+  {
+    "id": "freeze-2",
+    "familyId": "freeze",
+    "order": 16,
+    "prompt": "My mind went blank when I needed to decide or answer."
+  },
+  {
+    "id": "flock-2",
+    "familyId": "flock",
+    "order": 17,
+    "prompt": "I waited for a particular person to be nearby before taking the next step."
+  },
+  {
+    "id": "fight-2",
+    "familyId": "fight",
+    "order": 18,
+    "prompt": "My reaction came out bigger or sharper than I meant it to."
+  },
+  {
+    "id": "filter-2",
+    "familyId": "filter",
+    "order": 19,
+    "prompt": "I used a repeated movement or a familiar sensation to steady myself."
+  },
+  {
+    "id": "float-2",
+    "familyId": "float",
+    "order": 20,
+    "prompt": "I felt numb or cut off from what I would usually feel."
+  },
+  {
+    "id": "flop-2",
+    "familyId": "flop",
+    "order": 21,
+    "prompt": "Once the demands stopped, I felt too heavy or drained to do anything more."
+  },
+  {
+    "id": "fathom-2",
+    "familyId": "fathom",
+    "order": 22,
+    "prompt": "I kept returning to why it happened and what it says about me."
+  }
+]

@@ -1,0 +1,93 @@
+{
+  "contentVersion": "0.1.0",
+  "rulesVersion": "pilot-1",
+  "timeframe": "the last four weeks",
+  "settings": [
+    {
+      "id": "work",
+      "label": "Work or study",
+      "hint": "Meetings, deadlines, colleagues, classes."
+    },
+    {
+      "id": "home",
+      "label": "Home or family",
+      "hint": "The people and routines you live with."
+    },
+    {
+      "id": "group",
+      "label": "A group or community",
+      "hint": "Friends, a team, a class, a sangha, a gathering."
+    },
+    {
+      "id": "other",
+      "label": "Another recent setting",
+      "hint": "Any one place or relationship you have in mind."
+    }
+  ],
+  "frequencyScale": [
+    {
+      "id": "never",
+      "label": "Never",
+      "value": 0
+    },
+    {
+      "id": "rarely",
+      "label": "Rarely",
+      "value": 1
+    },
+    {
+      "id": "sometimes",
+      "label": "Sometimes",
+      "value": 2
+    },
+    {
+      "id": "often",
+      "label": "Often",
+      "value": 3
+    },
+    {
+      "id": "almost_always",
+      "label": "Almost every time",
+      "value": 4
+    },
+    {
+      "id": "no_opportunity",
+      "label": "No opportunity",
+      "value": null
+    }
+  ],
+  "capacityScale": [
+    {
+      "id": "available",
+      "label": "Available",
+      "state": "active"
+    },
+    {
+      "id": "sometimes",
+      "label": "Sometimes available",
+      "state": "mixed"
+    },
+    {
+      "id": "hard",
+      "label": "Hard to access",
+      "state": "constrained"
+    },
+    {
+      "id": "unsure",
+      "label": "Unsure",
+      "state": "unspecified"
+    },
+    {
+      "id": "private",
+      "label": "Keep private",
+      "state": "unspecified",
+      "privateOnly": true
+    }
+  ],
+  "rules": {
+    "strongValue": 3,
+    "supportValue": 2,
+    "maxIndications": 3,
+    "thinCoverageBelow": 11
+  }
+}

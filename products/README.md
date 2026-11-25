@@ -21,7 +21,8 @@ research through architecture, experiments, and publishable entries.
 | `entries/` | Schema-valid VICHARA entries, once content validation exists |
 | `assets/` | Approved, product-specific diagrams or supporting files as needed |
 
-Start with [Pensieve](./pensieve/), the first product exploration.
+Start with [Pensieve](./pensieve/), the first product exploration, or
+[Anveshana](./anveshana/), a private reflection app that runs in the browser.
 
 ```mermaid
 flowchart LR
