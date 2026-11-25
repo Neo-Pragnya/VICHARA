@@ -57,6 +57,15 @@ npm run preview
 root base URL. The Pages workflow sets `SITE_BASE=/VICHARA/` so project-site
 links resolve beneath the repository path.
 
+## 🧭 Anveshana
+
+`src/anveshana/` holds the Anveshana reflection app: JSON content, a pure
+TypeScript engine and the `<anveshana-app>` web component, served at
+`/anveshana/`. `npm run build` also runs `scripts/anveshana-standalone.mjs`,
+which writes `dist/anveshana/anveshana.html` (one self-contained file) and
+`dist/anveshana/anveshana.js`, and fails if the bundle could store or send
+answers. See `products/anveshana/README.md` and ADR-003.
+
 ## 🚀 Production hosting
 
 The root `.github/workflows/deploy.yml` builds and deploys only from `main`.

@@ -1,0 +1,41 @@
+---
+import SiteLayout from "../../components/SiteLayout.astro";
+import { bundle } from "../../anveshana/content";
+import { documentHref } from "../../lib/docs";
+
+const base = import.meta.env.BASE_URL;
+---
+
+<SiteLayout
+  title="Anveshana"
+  description="A private reflection on how you respond in difficult moments, what those responses protect, and one small thing to try."
+>
+  <main class="anveshana-page">
+    <anveshana-app theme="light">
+      <noscript>Anveshana needs JavaScript to run. Your answers never leave this page.</noscript>
+    </anveshana-app>
+    <p class="anveshana-meta">
+      Content {bundle.meta.contentVersion} · Rules {bundle.meta.rulesVersion} ·
+      <a href={documentHref("products/anveshana/index", base)}>About Anveshana</a> ·
+      <a href={`${base}anveshana/anveshana.html`}>Single-file version</a>
+    </p>
+  </main>
+</SiteLayout>
+
+<script>
+  import "../../anveshana/ui/anveshana-element";
+</script>
+
+<style>
+  .anveshana-page {
+    padding: 0 0 2rem;
+    background: #f7f4ee;
+  }
+  .anveshana-meta {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 0 clamp(1rem, 4vw, 1.75rem);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>

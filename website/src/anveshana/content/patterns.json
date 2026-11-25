@@ -1,0 +1,200 @@
+[
+  {
+    "id": "anger-that-lands-on-a-safer-person-later",
+    "familyId": "fight",
+    "title": "Anger that lands on a safer person later",
+    "question": "Who caused the original harm, and who paid the cost of the later reaction?"
+  },
+  {
+    "id": "anger-shouting-and-boundary-protest",
+    "familyId": "fight",
+    "title": "Anger, shouting and boundary protest",
+    "question": "What did you try before you raised your voice?"
+  },
+  {
+    "id": "reading-ambiguous-feedback-as-an-attack",
+    "familyId": "fight",
+    "title": "Reading ambiguous feedback as an attack",
+    "question": "What evidence about the present exchange have you actually checked?"
+  },
+  {
+    "id": "leaving-early-and-avoiding-reminders",
+    "familyId": "flight",
+    "title": "Leaving early and avoiding reminders",
+    "question": "What does leaving preserve today, and is there anything you wish to return to?"
+  },
+  {
+    "id": "keeping-busy-to-outrun-stillness",
+    "familyId": "flight",
+    "title": "Keeping busy to outrun stillness",
+    "question": "Would rest be possible if someone took over a real obligation?"
+  },
+  {
+    "id": "rushing-through-a-speaking-turn",
+    "familyId": "flight",
+    "title": "Rushing through a speaking turn",
+    "question": "What did you expect would happen if you paused?"
+  },
+  {
+    "id": "going-blank-and-decision-paralysis",
+    "familyId": "freeze",
+    "title": "Going blank and decision paralysis",
+    "question": "Did you lose the thought, need longer, or want a different option?"
+  },
+  {
+    "id": "unable-to-start-a-task-despite-intending-to-do-it",
+    "familyId": "freeze",
+    "title": "Unable to start a task despite intending to do it",
+    "question": "Which first action is actually available, understood and possible right now?"
+  },
+  {
+    "id": "bracing-the-hips-and-noticing-the-gut",
+    "familyId": "freeze",
+    "title": "Bracing the hips and noticing the gut",
+    "question": "What changes if you choose the seat, the break or the position?"
+  },
+  {
+    "id": "heaviness-after-sustained-effort",
+    "familyId": "flop",
+    "title": "Heaviness after sustained effort",
+    "question": "Which task did you still want to decide for yourself?"
+  },
+  {
+    "id": "postponing-valued-activity-until-motivation-returns",
+    "familyId": "flop",
+    "title": "Postponing valued activity until motivation returns",
+    "question": "What small part could you do before motivation arrives, and how did it feel afterwards?"
+  },
+  {
+    "id": "giving-up-when-earlier-efforts-changed-nothing",
+    "familyId": "flop",
+    "title": "Giving up when earlier efforts changed nothing",
+    "question": "What would have to be different this time for the effort to be worth making?"
+  },
+  {
+    "id": "automatic-agreement-and-apologizing",
+    "familyId": "fawn",
+    "title": "Automatic agreement and apologizing",
+    "question": "How long after saying yes did your own preference become clear?"
+  },
+  {
+    "id": "losing-touch-with-personal-preferences",
+    "familyId": "fawn",
+    "title": "Losing touch with personal preferences",
+    "question": "When did a preference last feel safe enough to express or revise?"
+  },
+  {
+    "id": "overexplaining-when-a-simple-answer-feels-unsafe",
+    "familyId": "fawn",
+    "title": "Overexplaining when a simple answer feels unsafe",
+    "question": "What would you risk if you ended the message after the first sentence?"
+  },
+  {
+    "id": "startling-and-scanning-for-danger",
+    "familyId": "flag",
+    "title": "Startling and scanning for danger",
+    "question": "What tells you that someone else will notice if the situation changes?"
+  },
+  {
+    "id": "reading-faces-in-an-audience",
+    "familyId": "flag",
+    "title": "Reading faces in an audience",
+    "question": "What feedback did the audience actually give?"
+  },
+  {
+    "id": "painful-sensitivity-to-perceived-rejection",
+    "familyId": "flag",
+    "title": "Painful sensitivity to perceived rejection",
+    "question": "What is known about the relationship, and what is the silence being asked to prove?"
+  },
+  {
+    "id": "perfectionism-and-rehearsal-that-never-ends",
+    "familyId": "forearm",
+    "title": "Perfectionism and rehearsal that never ends",
+    "question": "At which rehearsal was the information already accurate enough to share?"
+  },
+  {
+    "id": "chronic-worry-and-replaying-a-conversation",
+    "familyId": "forearm",
+    "title": "Chronic worry and replaying a conversation",
+    "question": "What question could another person actually answer?"
+  },
+  {
+    "id": "doing-everything-alone-and-refusing-offered-help",
+    "familyId": "forearm",
+    "title": "Doing everything alone and refusing offered help",
+    "question": "What would make this offer genuinely yours to accept or refuse?"
+  },
+  {
+    "id": "stimming-rocking-and-rhythmic-movement",
+    "familyId": "filter",
+    "title": "Stimming, rocking and rhythmic movement",
+    "question": "What does this movement let you enjoy or accomplish?"
+  },
+  {
+    "id": "nail-biting-and-picking-at-a-rough-edge",
+    "familyId": "filter",
+    "title": "Nail biting and picking at a rough edge",
+    "question": "Do you notice the rough edge, the urge, the movement or the soreness first?"
+  },
+  {
+    "id": "meltdown-and-loss-of-speech-during-overload",
+    "familyId": "filter",
+    "title": "Meltdown and loss of speech during overload",
+    "question": "Which early signal could others honor before speech gets difficult?"
+  },
+  {
+    "id": "reaching-for-a-trusted-person",
+    "familyId": "flock",
+    "title": "Reaching for a trusted person",
+    "question": "What kind of company feels helpful, and at what distance?"
+  },
+  {
+    "id": "asking-for-help-without-words",
+    "familyId": "flock",
+    "title": "Asking for help without words",
+    "question": "Will the listener honor the signal without requiring a spoken explanation?"
+  },
+  {
+    "id": "family-members-quietly-taking-over-avoided-tasks",
+    "familyId": "flock",
+    "title": "Family members quietly taking over avoided tasks",
+    "question": "Is there a task you want help with, and a part you would like back?"
+  },
+  {
+    "id": "emotional-numbing-and-withdrawing",
+    "familyId": "float",
+    "title": "Emotional numbing and withdrawing",
+    "question": "What do you miss, and which social demands are you relieved to put down?"
+  },
+  {
+    "id": "feeling-unreal-or-outside-oneself",
+    "familyId": "float",
+    "title": "Feeling unreal or outside oneself",
+    "question": "What felt unfamiliar even though you knew where you were?"
+  },
+  {
+    "id": "wanting-company-yet-feeling-cut-off-in-a-full-room",
+    "familyId": "float",
+    "title": "Wanting company yet feeling cut off in a full room",
+    "question": "What kind of company, with whom and for how long, would feel reachable?"
+  },
+  {
+    "id": "self-blame-and-shame-after-harm",
+    "familyId": "fathom",
+    "title": "Self-blame and shame after harm",
+    "question": "What did you know then, and who had control of the situation?"
+  },
+  {
+    "id": "finding-values-and-perceived-growth-after-adversity",
+    "familyId": "fathom",
+    "title": "Finding values and perceived growth after adversity",
+    "question": "What change do you value, and what would you like others to stop asking you to celebrate?"
+  },
+  {
+    "id": "moral-injury-after-a-violation-of-values",
+    "familyId": "fathom",
+    "title": "Moral injury after a violation of values",
+    "question": "What value was injured, and who had the power to uphold it?"
+  }
+]

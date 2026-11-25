@@ -1,0 +1,766 @@
+[
+  {
+    "id": "fight",
+    "name": "Fight",
+    "emoji": "🔥",
+    "plain": "Objecting, pushing back or resisting",
+    "tagline": "When a boundary has to reach the other person",
+    "voice": "Something has to stop.",
+    "protects": "Anger can spot an intrusion and supply the energy to object. A large signal may have been the only kind that worked when smaller ones went unanswered.",
+    "growthEdge": "If only a big signal has ever worked, quieter objections stop feeling worth trying, and people nearby may start bracing for the reaction instead of hearing the point.",
+    "opening": "More choice appears when a smaller signal is honored the first time. Use few words while things are heated, then return to the conversation when everyone can take part.",
+    "chakraReading": "Maṇipūra names the felt right to act. Viśuddhi carries the stop, in words or a gesture. Mūlādhāra asks whether a smaller boundary will be honored. When Anāhata stays available, you can care about the impact and still stand by the boundary.",
+    "plainReading": "This touches your sense of agency, your voice, and whether you expect a smaller boundary to be honored. When care stays available, you can attend to the impact and still stand by the boundary.",
+    "lensIds": [
+      "manipura",
+      "vishuddhi",
+      "muladhara",
+      "anahata"
+    ],
+    "functionPrompt": "When you objected or pushed back, what did it give you?",
+    "functionOptions": [
+      {
+        "id": "stopped",
+        "label": "It stopped something that needed to stop"
+      },
+      {
+        "id": "heard",
+        "label": "It made someone finally listen"
+      },
+      {
+        "id": "space",
+        "label": "It gave me some space"
+      },
+      {
+        "id": "release",
+        "label": "It let out pressure that had built up"
+      }
+    ],
+    "costPrompt": "What, if anything, did it cost you?",
+    "costOptions": [
+      {
+        "id": "landed_wrong",
+        "label": "It landed on someone who wasn't the cause",
+        "tradeoff": "When the reaction lands on a safer person later, the original boundary still goes unsaid where it was needed, and a relationship you value takes the weight."
+      },
+      {
+        "id": "missed_point",
+        "label": "People reacted to my tone and missed my point",
+        "tradeoff": "When the size of the reaction becomes the topic, the boundary itself gets lost and you may conclude that nobody listens unless you escalate."
+      },
+      {
+        "id": "regret",
+        "label": "I regretted how it came out",
+        "tradeoff": "Regret afterwards can make you doubt a boundary that was fair, so the next objection arrives later and larger."
+      }
+    ],
+    "shifts": [
+      {
+        "familyId": "flag",
+        "circumstance": "When the first stop is honored, attention can simply check that it held."
+      },
+      {
+        "familyId": "flock",
+        "circumstance": "After speaking up, a trusted colleague or friend can share the work of holding the line."
+      }
+    ],
+    "actionIds": [
+      "fight-early-signal",
+      "fight-revisit"
+    ]
+  },
+  {
+    "id": "flight",
+    "name": "Flight",
+    "emoji": "🪽",
+    "plain": "Creating distance or leaving",
+    "tagline": "Creating distance opens another possibility",
+    "voice": "I can deal with this if I can leave.",
+    "protects": "Distance can remove a real threat, keep an escape route open and give you room to think.",
+    "growthEdge": "If every reminder comes to predict the same danger, a growing number of rooms, people and activities become hard to enter, including ones you value.",
+    "opening": "Where danger is current, a usable way out is part of safety. In a setting you judge safe and care about, agree in advance how you can pause, leave or return. Having an exit can change what staying feels like.",
+    "chakraReading": "Mūlādhāra asks where the landing place is. Svādhiṣṭhāna gives the image of moving around an obstacle. Maṇipūra contributes the decision to leave. Viśuddhi may call to a friend or stay quiet through the exit.",
+    "plainReading": "This touches where you can land safely, your freedom to move, the decision to leave, and whether you could tell anyone you were going.",
+    "lensIds": [
+      "muladhara",
+      "svadhishthana",
+      "manipura",
+      "vishuddhi"
+    ],
+    "functionPrompt": "When you created distance, what did it give you?",
+    "functionOptions": [
+      {
+        "id": "safety",
+        "label": "It got me away from something that was not okay"
+      },
+      {
+        "id": "think",
+        "label": "It gave me room to think"
+      },
+      {
+        "id": "relief",
+        "label": "It brought quick relief"
+      },
+      {
+        "id": "route",
+        "label": "It kept a way out open"
+      }
+    ],
+    "costPrompt": "What, if anything, did it cost you?",
+    "costOptions": [
+      {
+        "id": "missed_valued",
+        "label": "I missed something I wanted to be part of",
+        "tradeoff": "Each exit brings relief now and leaves a valued activity a little further out of reach, so the list of places you avoid grows faster than the list you return to."
+      },
+      {
+        "id": "unresolved",
+        "label": "The issue was still waiting when I came back",
+        "tradeoff": "Leaving ends the moment without changing the situation, so the same conversation keeps returning with more dread attached."
+      },
+      {
+        "id": "others_confused",
+        "label": "Other people didn't know why I left",
+        "tradeoff": "When leaving goes unexplained, others fill in their own reasons, and returning starts to feel harder than staying away."
+      }
+    ],
+    "shifts": [
+      {
+        "familyId": "forearm",
+        "circumstance": "Choosing a seat, an exit and an optional return plan can make entering possible."
+      },
+      {
+        "familyId": "flock",
+        "circumstance": "Once distance is respected, you may want company on your own terms."
+      }
+    ],
+    "actionIds": [
+      "flight-agreed-exit",
+      "flight-one-return"
+    ]
+  },
+  {
+    "id": "freeze",
+    "name": "Freeze",
+    "emoji": "🧊",
+    "plain": "Going still, stuck or blank",
+    "tagline": "Stillness can contain an unfinished action",
+    "voice": "I know where I want to go. The step has not come.",
+    "protects": "A pause can buy information before you commit. Sometimes the stillness is involuntary: judgment is available and movement or speech is not.",
+    "growthEdge": "When the moment passes before the step arrives, decisions get made without you, and others may read your silence as agreement or indecision.",
+    "opening": "Time and a real way out help. A gesture, a written message or a later answer can return agency before speech or movement feels possible. Stillness and silence never count as consent.",
+    "chakraReading": "Mūlādhāra holds a position while Svādhiṣṭhāna carries an impulse to turn or step that has not yet found room. Ajñā may feel especially vivid as attention fixes on one detail. Maṇipūra, the capacity to act on a choice, is often the one that feels out of reach.",
+    "plainReading": "This touches your footing, an impulse to move that has not found room, and attention that narrows to one detail. The ability to act on a choice is often the part that feels out of reach.",
+    "lensIds": [
+      "muladhara",
+      "svadhishthana",
+      "manipura",
+      "ajna"
+    ],
+    "functionPrompt": "When you went still or blank, what did it give you?",
+    "functionOptions": [
+      {
+        "id": "time",
+        "label": "It gave me a moment to see what would happen"
+      },
+      {
+        "id": "unnoticed",
+        "label": "It kept me from drawing attention"
+      },
+      {
+        "id": "no_mistake",
+        "label": "It kept me from making the wrong move"
+      },
+      {
+        "id": "involuntary",
+        "label": "Nothing I chose. It just happened"
+      }
+    ],
+    "costPrompt": "What, if anything, did it cost you?",
+    "costOptions": [
+      {
+        "id": "moment_passed",
+        "label": "The moment passed before I could act",
+        "tradeoff": "When the window closes before the step arrives, the choice is made by default, and the unfinished action can stay with you long after."
+      },
+      {
+        "id": "read_as_yes",
+        "label": "Others read my silence as agreement",
+        "tradeoff": "When silence is taken as a yes, you end up bound to things you never chose, which makes the next pause feel even more costly."
+      },
+      {
+        "id": "self_blame",
+        "label": "I criticized myself for it afterwards",
+        "tradeoff": "Blaming yourself for an involuntary response adds a second weight to the first and makes the next blank moment more likely to feel like failure."
+      }
+    ],
+    "shifts": [
+      {
+        "familyId": "forearm",
+        "circumstance": "A written prompt and an agreed option to return later can preserve your turn."
+      },
+      {
+        "familyId": "flock",
+        "circumstance": "Someone who waits, or who can speak with your agreement, can make the next step possible."
+      }
+    ],
+    "actionIds": [
+      "freeze-later-answer",
+      "freeze-first-step"
+    ]
+  },
+  {
+    "id": "flop",
+    "name": "Flop",
+    "emoji": "🪶",
+    "plain": "Effort giving way",
+    "tagline": "When even holding yourself up feels like work",
+    "voice": "I can still decide who helps me.",
+    "protects": "Handing over a task can conserve effort when there is none left. It often shows how much work standing, answering and appearing composed had been taking.",
+    "growthEdge": "If others then take over every decision, the support you needed starts to cost you autonomy, and effort can begin to feel pointless before you start.",
+    "opening": "Practical support helps without anyone reading the moment as giving up. Keep the choices that are still yours, such as who stays and what happens next. Notice which choices get easier once the load is shared.",
+    "chakraReading": "Mūlādhāra carries the experience of being held up. A chair, a quiet witness or permission to lie down gives that symbol concrete meaning. Maṇipūra can remain present as the quiet authority to choose who stays.",
+    "plainReading": "This touches the experience of being supported at all. Even with little energy, the quiet authority to choose who helps and who stays can remain yours.",
+    "lensIds": [
+      "muladhara",
+      "manipura",
+      "svadhishthana"
+    ],
+    "functionPrompt": "When effort dropped away, what did it give you?",
+    "functionOptions": [
+      {
+        "id": "rest",
+        "label": "It gave me rest I badly needed"
+      },
+      {
+        "id": "carried",
+        "label": "It let someone else carry things for a while"
+      },
+      {
+        "id": "demands_ended",
+        "label": "It ended demands I could not meet"
+      },
+      {
+        "id": "involuntary",
+        "label": "Nothing I chose. It just happened"
+      }
+    ],
+    "costPrompt": "What, if anything, did it cost you?",
+    "costOptions": [
+      {
+        "id": "others_decided",
+        "label": "Other people made decisions I wanted to make",
+        "tradeoff": "When help takes over the deciding as well as the doing, you recover energy and lose a say, and asking for help starts to feel risky."
+      },
+      {
+        "id": "left_undone",
+        "label": "Things I care about were left undone",
+        "tradeoff": "When recovery uses all the time there is, the things that give your life shape wait longest, and their absence makes effort feel less worthwhile."
+      },
+      {
+        "id": "seen_as_not_trying",
+        "label": "It was read as not trying",
+        "tradeoff": "When collapse is read as not caring, you spend scarce energy looking fine, which brings the next collapse closer."
+      }
+    ],
+    "shifts": [
+      {
+        "familyId": "flock",
+        "circumstance": "A friend handles one practical thing while you choose who stays."
+      },
+      {
+        "familyId": "forearm",
+        "circumstance": "Preparing one small, reachable step can restore a choice for tomorrow."
+      }
+    ],
+    "actionIds": [
+      "flop-keep-one-choice",
+      "flop-reachable-step"
+    ]
+  },
+  {
+    "id": "fawn",
+    "name": "Fawn",
+    "emoji": "🕊️",
+    "plain": "Going along to keep the peace",
+    "tagline": "Reading another person can buy time",
+    "voice": "Once I know you are okay, I can think about what I want.",
+    "protects": "Agreeing quickly can end a tense exchange and keep a relationship workable, especially where refusing once had consequences. Reading a room well is a real skill.",
+    "growthEdge": "An immediate yes leaves little time to notice your own preference. It may only become clear later, after you are already committed.",
+    "opening": "More choice appears when a refusal is accepted without fallout. Where it is safe, buy time before answering. Where refusing would increase danger, support you can reach privately does more than a lesson in assertiveness.",
+    "chakraReading": "Anāhata reaches for connection and Viśuddhi may supply exactly the right words. Feeling and movement are available, while acting on your own preference through Maṇipūra carries a price. That is judgment about when to express power, not weakness.",
+    "plainReading": "Care and fluent words are fully available here. What carries a price is acting on your own preference. Postponing it reflects judgment, not weakness.",
+    "lensIds": [
+      "anahata",
+      "vishuddhi",
+      "manipura"
+    ],
+    "functionPrompt": "When you went along with someone, what did it give you?",
+    "functionOptions": [
+      {
+        "id": "calm",
+        "label": "It kept things calm"
+      },
+      {
+        "id": "relationship",
+        "label": "It protected a relationship I need"
+      },
+      {
+        "id": "time",
+        "label": "It bought me time"
+      },
+      {
+        "id": "kindness",
+        "label": "It was a kindness I chose freely"
+      }
+    ],
+    "costPrompt": "What, if anything, did it cost you?",
+    "costOptions": [
+      {
+        "id": "late_preference",
+        "label": "I only realized later what I actually wanted",
+        "tradeoff": "When your yes arrives before your preference does, your own wants get quieter with each round and commitments pile up that you would not have chosen."
+      },
+      {
+        "id": "overcommitted",
+        "label": "I took on more than I had energy for",
+        "tradeoff": "Agreeing before checking your energy spends it on other people's priorities, leaving little for the things that would move your own life forward."
+      },
+      {
+        "id": "resentment",
+        "label": "I felt resentful afterwards",
+        "tradeoff": "Resentment after an unspoken no tends to leak out sideways, and the other person never gets the chance to respect a limit they did not know about."
+      }
+    ],
+    "shifts": [
+      {
+        "familyId": "forearm",
+        "circumstance": "A prepared holding reply makes a later decision possible."
+      },
+      {
+        "familyId": "fathom",
+        "circumstance": "Alone or with a trusted friend, you can find the preference and what makes it safe to voice."
+      }
+    ],
+    "actionIds": [
+      "fawn-holding-reply",
+      "fawn-energy-check"
+    ]
+  },
+  {
+    "id": "flag",
+    "name": "Flag",
+    "emoji": "🔭",
+    "plain": "Noticing cues and scanning",
+    "tagline": "Noticing early buys time",
+    "voice": "I noticed something. Do I need to keep watching?",
+    "protects": "Noticing early gives you time to act. Where missing a cue has had real costs, careful watching is an intelligent response.",
+    "growthEdge": "If every uncertain sign needs continuous attention, little is left for the conversation or task you came for, and rest never quite arrives.",
+    "opening": "Agree who will tell you if the situation changes. A warning that reliably comes from someone else makes divided attention less necessary. Getting back to what you were doing matters more than whether you still notice the door.",
+    "chakraReading": "Ajñā selects the sign that matters. Mūlādhāra asks what would count as enough evidence of safety. Anāhata changes the task when someone trustworthy agrees to keep watch. High attention can coexist with very little freedom to act.",
+    "plainReading": "This touches attention, the question of what would count as enough evidence of safety, and whether anyone can share the watching. Intense attention can sit alongside very little freedom to act.",
+    "lensIds": [
+      "ajna",
+      "muladhara",
+      "anahata"
+    ],
+    "functionPrompt": "When a cue took your attention, what did it give you?",
+    "functionOptions": [
+      {
+        "id": "early_warning",
+        "label": "It warned me early about something real"
+      },
+      {
+        "id": "time",
+        "label": "It gave me time to choose a response"
+      },
+      {
+        "id": "less_surprise",
+        "label": "It meant fewer surprises"
+      },
+      {
+        "id": "read_people",
+        "label": "It helped me read what others needed"
+      }
+    ],
+    "costPrompt": "What, if anything, did it cost you?",
+    "costOptions": [
+      {
+        "id": "lost_task",
+        "label": "I lost track of what I was there to do",
+        "tradeoff": "When attention stays on the room, the work or conversation gets what is left over, and you can leave having monitored everything and taken part in little."
+      },
+      {
+        "id": "false_alarm",
+        "label": "I read danger into something neutral",
+        "tradeoff": "Treating an ambiguous cue as settled can set off a response to something that was not happening, and the other person meets a reaction they cannot explain."
+      },
+      {
+        "id": "tired",
+        "label": "It left me tired",
+        "tradeoff": "Watching without a break uses energy that recovery, learning and enjoyment also need."
+      }
+    ],
+    "shifts": [
+      {
+        "familyId": "flock",
+        "circumstance": "A trusted person agrees to tell you if something changes."
+      },
+      {
+        "familyId": "fathom",
+        "circumstance": "Checking what the cue meant this time lets attention return to what you were doing."
+      }
+    ],
+    "actionIds": [
+      "flag-share-watch",
+      "flag-check-meaning"
+    ]
+  },
+  {
+    "id": "forearm",
+    "name": "Forearm",
+    "emoji": "🧭",
+    "plain": "Anticipating and preparing",
+    "tagline": "Preparing in advance for what might happen",
+    "voice": "What could I put in place now?",
+    "protects": "Preparation can be a real accommodation and a skilled answer to uncertainty. A script or a backup plan can be what makes taking part possible.",
+    "growthEdge": "A rehearsed reply can support participation while taking effort that shows up later. The cost rises when an evening of preparation buys seconds of relief.",
+    "opening": "Separate a practical need that can be met once from a question that comes back after every answer. Keep the structure that works. For each further check, ask what new information it adds. If checking or rituals take up a lot of time and cause distress, a clinician who knows OCD can help you look at options.",
+    "chakraReading": "Ajñā pictures possible futures. Maṇipūra selects an action now. Mūlādhāra asks how much uncertainty is tolerable when an error can be repaired. Viśuddhi is available when you can name what you need others to make predictable.",
+    "plainReading": "This touches imagining what might happen, acting now to reduce it, and how much uncertainty feels bearable. Voice comes in when you can tell others what you need to be predictable.",
+    "lensIds": [
+      "ajna",
+      "manipura",
+      "muladhara",
+      "vishuddhi"
+    ],
+    "functionPrompt": "What did preparing give you?",
+    "functionOptions": [
+      {
+        "id": "express",
+        "label": "An easier way to express myself"
+      },
+      {
+        "id": "backup",
+        "label": "A backup plan for a real problem"
+      },
+      {
+        "id": "relief",
+        "label": "Short-term relief from uncertainty"
+      },
+      {
+        "id": "enjoy",
+        "label": "A routine I enjoy"
+      }
+    ],
+    "costPrompt": "What, if anything, did it cost you?",
+    "costOptions": [
+      {
+        "id": "time",
+        "label": "It took far more time than the event itself",
+        "tradeoff": "When preparation outgrows the event, the hours come out of rest and the things you would rather be doing, and the relief it buys gets shorter each time."
+      },
+      {
+        "id": "rigid",
+        "label": "It was hard to adapt when things went off-plan",
+        "tradeoff": "A plan that must be followed exactly can make an ordinary surprise feel like failure, which calls for even more preparation next time."
+      },
+      {
+        "id": "others_rules",
+        "label": "Other people had to fit around my plan",
+        "tradeoff": "When your relief depends on everyone else following a rule, the people around you carry the cost and the uncertainty still has not become easier to bear."
+      }
+    ],
+    "shifts": [
+      {
+        "familyId": "flock",
+        "circumstance": "Arranging to arrive with a chosen person can open a second option."
+      },
+      {
+        "familyId": "fathom",
+        "circumstance": "Separating a factual gap from a verdict about yourself can end the replay."
+      }
+    ],
+    "actionIds": [
+      "forearm-enough-point",
+      "forearm-one-ally"
+    ]
+  },
+  {
+    "id": "filter",
+    "name": "Filter",
+    "emoji": "🌊",
+    "plain": "Adjusting sensory input",
+    "tagline": "Changing the input to stay present",
+    "voice": "Which sensation would help me be here?",
+    "protects": "A helpful rhythm, texture or change in sound can support comfort, enjoyment and staying present. Pleasure, concentration and habit are equally good reasons.",
+    "growthEdge": "Suppressing a harmless movement for the sake of appearances can make listening harder. If the only workable setting is one you fully control, fewer places stay open to you.",
+    "opening": "Change one thing you want changed, such as a buzzing light, and notice whether listening or comfort improves. Keeping a harmless movement that works is a good outcome. Having control of the input often matters more than the input itself.",
+    "chakraReading": "Svādhiṣṭhāna stands for the texture and rhythm of sensation. Mūlādhāra asks what surroundings make it bearable. Maṇipūra asks who controls the input. Having your hand on the volume can change the experience even when the room sounds the same.",
+    "plainReading": "This touches sensation and rhythm, what surroundings feel bearable, and who controls the input. Having your hand on the volume can change the experience even when the room sounds the same.",
+    "lensIds": [
+      "svadhishthana",
+      "muladhara",
+      "manipura"
+    ],
+    "functionPrompt": "When you adjusted sensation, what did it give you?",
+    "functionOptions": [
+      {
+        "id": "stay",
+        "label": "It helped me stay in the situation"
+      },
+      {
+        "id": "focus",
+        "label": "It helped me concentrate"
+      },
+      {
+        "id": "comfort",
+        "label": "It eased discomfort or pain"
+      },
+      {
+        "id": "enjoy",
+        "label": "I simply enjoy it"
+      }
+    ],
+    "costPrompt": "What, if anything, did it cost you?",
+    "costOptions": [
+      {
+        "id": "hid_it",
+        "label": "I held it back so others wouldn't notice",
+        "tradeoff": "Holding back something that helps takes the attention you needed for the situation itself, so you look composed and take in less."
+      },
+      {
+        "id": "harm",
+        "label": "It left my body sore or hurt",
+        "tradeoff": "When the thing that steadies you also injures you, relief and harm arrive together. That is worth raising with a clinician you trust."
+      },
+      {
+        "id": "narrowed",
+        "label": "I could only manage in places I fully controlled",
+        "tradeoff": "When only fully controlled settings feel possible, invitations shrink to match, including ones you would have liked to accept."
+      }
+    ],
+    "shifts": [
+      {
+        "familyId": "flock",
+        "circumstance": "One person who knows your early signal can help secure a quieter place."
+      },
+      {
+        "familyId": "flag",
+        "circumstance": "Noticing what comes first, the sensation or the strain, tells you what to change."
+      }
+    ],
+    "actionIds": [
+      "filter-change-one-thing",
+      "filter-keep-what-works"
+    ]
+  },
+  {
+    "id": "flock",
+    "name": "Flock",
+    "emoji": "🤝",
+    "plain": "Seeking trusted company",
+    "tagline": "Doing this with someone beside you",
+    "voice": "Who will give me time or help me change this situation?",
+    "protects": "Reaching for someone you trust brings information, company and practical help. Chosen company can spread a load or make a task possible.",
+    "growthEdge": "Help that takes over the task can wear down the confidence it was meant to support. If one person has to be there every time, their absence becomes its own obstacle.",
+    "opening": "Ask for a specific kind of company and say what you want them to do. Sitting a few chairs away, waiting outside or sending a message may help more than a hug. Keep the decision about when the company has done enough.",
+    "chakraReading": "Anāhata describes a relationship in which help can be received. Mūlādhāra gains an actual person to rely on. Viśuddhi may be a glance at a chosen ally. Maṇipūra stays with you: you decide when company has done enough.",
+    "plainReading": "This touches your ability to receive care, having a real person to rely on, and being able to ask. The decision about when company has done enough stays with you.",
+    "lensIds": [
+      "anahata",
+      "muladhara",
+      "vishuddhi",
+      "manipura"
+    ],
+    "functionPrompt": "When you reached for someone you trust, what did it give you?",
+    "functionOptions": [
+      {
+        "id": "practical",
+        "label": "Practical help with the situation"
+      },
+      {
+        "id": "steadier",
+        "label": "I felt steadier with them there"
+      },
+      {
+        "id": "perspective",
+        "label": "A second view of what was happening"
+      },
+      {
+        "id": "enjoy",
+        "label": "Company I simply enjoy"
+      }
+    ],
+    "costPrompt": "What, if anything, did it cost you?",
+    "costOptions": [
+      {
+        "id": "took_over",
+        "label": "They ended up doing it for me",
+        "tradeoff": "When help does the task for you, the situation is handled and your own evidence that you can handle it does not grow."
+      },
+      {
+        "id": "only_one",
+        "label": "I couldn't manage when they weren't available",
+        "tradeoff": "When one person carries all the steadiness, your options depend on their calendar, and the relationship carries more than it may be able to hold."
+      },
+      {
+        "id": "burden",
+        "label": "I worried about being a burden",
+        "tradeoff": "Worry about burdening someone can stop you asking until things are urgent, which is the hardest time for anyone to help well."
+      }
+    ],
+    "shifts": [
+      {
+        "familyId": "forearm",
+        "circumstance": "After receiving help, you can plan the next occasion together and choose which part is yours."
+      },
+      {
+        "familyId": "fathom",
+        "circumstance": "Naming which part of the company mattered tells you what to ask for next time."
+      }
+    ],
+    "actionIds": [
+      "flock-specific-ask",
+      "flock-one-part-back"
+    ]
+  },
+  {
+    "id": "float",
+    "name": "Float",
+    "emoji": "🌫️",
+    "plain": "Feeling distant or unreal",
+    "tagline": "When presence and feeling come apart",
+    "voice": "I know this room. Why does it feel so far away?",
+    "protects": "There may be no protective intention at all. Some people find that distance makes an overwhelming moment bearable. Others find the distance itself frightening. Only you can say which fits.",
+    "growthEdge": "When feeling is far away, the things that usually guide your choices, such as what you like, what hurts and who matters, are harder to read, and good moments can pass without registering.",
+    "opening": "Ask yourself whether a familiar voice, object or outside point of reference would help, or whether quiet would serve better. You are allowed to change the subject. Episodes that keep returning, distress you or disrupt daily life deserve a clinical assessment.",
+    "chakraReading": "Svādhiṣṭhāna gives language for how reachable sensation feels. Ajñā describes the position of the witness. Mūlādhāra names familiar points of reference. You decide whether witnessing feels chosen and steadying or unwanted and estranging.",
+    "plainReading": "This touches how reachable sensation and feeling are, the sense of watching from outside, and the familiar reference points that locate you. You decide whether that distance feels steadying or unwanted.",
+    "lensIds": [
+      "svadhishthana",
+      "ajna",
+      "muladhara"
+    ],
+    "functionPrompt": "When things felt far away, what did the distance give you?",
+    "functionOptions": [
+      {
+        "id": "bearable",
+        "label": "It made the moment bearable"
+      },
+      {
+        "id": "function",
+        "label": "It let me keep functioning"
+      },
+      {
+        "id": "unwanted",
+        "label": "Nothing. It was unwelcome or frightening"
+      },
+      {
+        "id": "involuntary",
+        "label": "Nothing I chose. It just happened"
+      }
+    ],
+    "costPrompt": "What, if anything, did it cost you?",
+    "costOptions": [
+      {
+        "id": "missed_feeling",
+        "label": "I missed feeling something I wanted to feel",
+        "tradeoff": "When numbness covers the hard feelings it tends to cover the welcome ones too, so good news and closeness can arrive without landing."
+      },
+      {
+        "id": "memory",
+        "label": "I couldn't recall parts of it afterwards",
+        "tradeoff": "Gaps in what you recall make it harder to learn from a situation or explain it to someone who could help."
+      },
+      {
+        "id": "frightening",
+        "label": "The distance itself was frightening",
+        "tradeoff": "When the distance is itself alarming, effort goes into bracing for the next episode. Recurrent, distressing episodes are worth taking to a clinician."
+      }
+    ],
+    "shifts": [
+      {
+        "familyId": "flock",
+        "circumstance": "A familiar voice or quiet company, at a distance you choose."
+      },
+      {
+        "familyId": "filter",
+        "circumstance": "A chosen sound or familiar object may feel orienting. Quiet may serve better."
+      }
+    ],
+    "actionIds": [
+      "float-reference-point",
+      "float-planned-second-conversation"
+    ]
+  },
+  {
+    "id": "fathom",
+    "name": "Fathom",
+    "emoji": "🪷",
+    "plain": "Making sense of an experience",
+    "tagline": "Working out what an experience means",
+    "voice": "What did I know then, and who had the power to choose?",
+    "protects": "Making meaning can restore coherence, dignity and hope. A story about what happened can protect a relationship or a belief you need.",
+    "growthEdge": "A story can also turn one moment into a verdict about you, or move responsibility onto you that belongs to someone else. Returning to the same question can replace acting on it.",
+    "opening": "Try a second account that keeps the facts and puts responsibility where it belongs. You can keep a practice or belief and still revise an interpretation that blamed you. Time, trustworthy witnesses and real changes in safety give a new account something to rest on.",
+    "chakraReading": "Ajñā weighs interpretations. Anāhata asks whose care the story preserves and whether it can include you. Mūlādhāra returns the inquiry to material conditions. Either crown may enter if you recognize a tie to lineage or a sense of communion in the story.",
+    "plainReading": "This touches how you interpret events, whose care your story protects and whether it includes you, and the practical conditions around you. Roots or a wider awareness may be part of it if you recognize them there.",
+    "lensIds": [
+      "ajna",
+      "anahata",
+      "muladhara"
+    ],
+    "functionPrompt": "When you worked on what it meant, what did it give you?",
+    "functionOptions": [
+      {
+        "id": "clarity",
+        "label": "A clearer sense of what happened"
+      },
+      {
+        "id": "next_step",
+        "label": "A way to decide what to do next"
+      },
+      {
+        "id": "protect_bond",
+        "label": "A way to keep faith with someone or something I care about"
+      },
+      {
+        "id": "prevent",
+        "label": "A sense that I could prevent it next time"
+      }
+    ],
+    "costPrompt": "What, if anything, did it cost you?",
+    "costOptions": [
+      {
+        "id": "verdict",
+        "label": "It turned into a harsh verdict about me",
+        "tradeoff": "When one moment becomes a judgment on your character, exceptions stop counting, and trying something new feels like evidence waiting to be used against you."
+      },
+      {
+        "id": "loop",
+        "label": "I went round the same question without settling it",
+        "tradeoff": "Circling a question that has no new information uses the time and attention that a small action or a conversation would need."
+      },
+      {
+        "id": "took_blame",
+        "label": "I took on responsibility that wasn't mine",
+        "tradeoff": "Carrying responsibility that belonged to someone with more power keeps the story tidy and leaves you guarding against things you never controlled."
+      }
+    ],
+    "shifts": [
+      {
+        "familyId": "flock",
+        "circumstance": "One chosen witness can describe what they saw and widen the record."
+      },
+      {
+        "familyId": "forearm",
+        "circumstance": "Turning the question into one practical plan can let it rest."
+      }
+    ],
+    "actionIds": [
+      "fathom-second-account",
+      "fathom-one-witness"
+    ]
+  }
+]

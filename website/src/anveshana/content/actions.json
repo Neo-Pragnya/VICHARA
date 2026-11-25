@@ -1,0 +1,200 @@
+[
+  {
+    "id": "fight-early-signal",
+    "familyId": "fight",
+    "title": "Send the smaller signal first",
+    "prompt": "Pick one person who usually listens. The next time something starts to bother you, say one short sentence early, such as “I'd like to stop here for a moment.”",
+    "useWhen": "The person is generally safe to disagree with and the matter is not urgent.",
+    "checkIn": "Did the smaller signal get a response, and how much energy did it take compared with waiting?",
+    "bringsIn": "flag"
+  },
+  {
+    "id": "fight-revisit",
+    "familyId": "fight",
+    "title": "Return to it when things are calm",
+    "prompt": "After a sharp exchange, go back once both of you are settled. Say what the boundary was, and separately acknowledge anything about how it came out that you would change.",
+    "useWhen": "Both people are willing to talk and nobody is at risk of harm.",
+    "checkIn": "Is the boundary clearer to the other person now, and does the relationship feel more or less workable?",
+    "bringsIn": "fathom"
+  },
+  {
+    "id": "flight-agreed-exit",
+    "familyId": "flight",
+    "title": "Agree your exit before you enter",
+    "prompt": "For one setting you value, decide in advance how you can step out and come back: where you will sit, a phrase such as “I need ten minutes,” and who needs to know.",
+    "useWhen": "You judge the setting safe and it is one you want to keep in your life.",
+    "checkIn": "Did knowing you could leave change how long you chose to stay?",
+    "bringsIn": "forearm"
+  },
+  {
+    "id": "flight-one-return",
+    "familyId": "flight",
+    "title": "Return to one thing, briefly",
+    "prompt": "Choose one activity you have been staying away from and still care about. Go back for a short, fixed time that you set yourself, with a clear way to leave.",
+    "useWhen": "The thing you left is not currently dangerous, and you are the one choosing to return.",
+    "checkIn": "Was it what you expected? Would you choose the same length, longer or shorter next time?",
+    "bringsIn": "flag"
+  },
+  {
+    "id": "freeze-later-answer",
+    "familyId": "freeze",
+    "title": "Keep the right to answer later",
+    "prompt": "Agree one sentence or signal you can use when words do not come, such as “I'll reply in writing this afternoon,” and tell one person in this setting what it means.",
+    "useWhen": "A later answer is acceptable in this setting and the person will honor it.",
+    "checkIn": "Did your answer arrive later, and was it treated as a real answer?",
+    "bringsIn": "forearm"
+  },
+  {
+    "id": "freeze-first-step",
+    "familyId": "freeze",
+    "title": "Make the first step visible",
+    "prompt": "For one task you keep meaning to start, write down only the first physical action, such as “open the document,” and put it where you will see it at a time that suits you.",
+    "useWhen": "The difficulty is starting, and you do want to do the task.",
+    "checkIn": "Did the first action happen? What made it easier or harder?",
+    "bringsIn": "forearm"
+  },
+  {
+    "id": "flop-keep-one-choice",
+    "familyId": "flop",
+    "title": "Hand over a task, keep one choice",
+    "prompt": "When you need someone to take over, name one decision that stays yours, such as who stays, when it happens or what you eat. Say it or write it down.",
+    "useWhen": "Someone reliable is available to take the task.",
+    "checkIn": "Did the choice you kept get respected, and did resting feel different because of it?",
+    "bringsIn": "flock"
+  },
+  {
+    "id": "flop-reachable-step",
+    "familyId": "flop",
+    "title": "Set out one reachable thing for tomorrow",
+    "prompt": "Before resting, prepare one small part of something you value so that it is within reach the next day. One item is enough.",
+    "useWhen": "You have a little energy left over and no urgent demands.",
+    "checkIn": "Did you use what you set out? Rate the effort and the satisfaction separately.",
+    "bringsIn": "forearm"
+  },
+  {
+    "id": "fawn-holding-reply",
+    "familyId": "fawn",
+    "title": "Use a holding reply",
+    "prompt": "With one person who honors a later answer, respond to the next request with “Let me check and tell you tomorrow.” Then notice what you want before you reply.",
+    "useWhen": "A delay is safe and the person accepts a later answer.",
+    "checkIn": "Did having time make your preference clearer, and did they accept your answer?",
+    "bringsIn": "forearm"
+  },
+  {
+    "id": "fawn-energy-check",
+    "familyId": "fawn",
+    "title": "Check your energy before you offer",
+    "prompt": "Choose a regular moment, such as Sunday evening, to look at what you have already agreed to. Before saying yes to anything new that week, check it against that list.",
+    "useWhen": "Requests usually come with at least a little notice.",
+    "checkIn": "Did you keep an appointment with yourself this week that you would otherwise have given away?",
+    "bringsIn": "fathom"
+  },
+  {
+    "id": "flag-share-watch",
+    "familyId": "flag",
+    "title": "Share the watching",
+    "prompt": "Ask one trusted person in this setting to tell you if a specific thing changes, such as the mood of a meeting or a deadline moving. For that period, let them hold it.",
+    "useWhen": "There is someone you trust to notice and to tell you.",
+    "checkIn": "Were you able to return to what you were doing, and did they tell you when it mattered?",
+    "bringsIn": "flock"
+  },
+  {
+    "id": "flag-check-meaning",
+    "familyId": "flag",
+    "title": "Check what the cue meant",
+    "prompt": "The next time a face or tone takes your attention, ask one question where it is safe to do so, such as “You went quiet. Is something up?”",
+    "useWhen": "The person is safe to ask and a wrong guess would be low-stakes.",
+    "checkIn": "Did it mean what you first thought? How long did your attention stay on it afterwards?",
+    "bringsIn": "fathom"
+  },
+  {
+    "id": "forearm-enough-point",
+    "familyId": "forearm",
+    "title": "Name your enough point",
+    "prompt": "Before preparing for the next event, decide what “ready” means: for example, three key points and one fallback. Stop when you reach it.",
+    "useWhen": "A mistake in this situation can be repaired.",
+    "checkIn": "Did extra preparation beyond that point add anything you used?",
+    "bringsIn": "fathom"
+  },
+  {
+    "id": "forearm-one-ally",
+    "familyId": "forearm",
+    "title": "Replace one rehearsal with one ally",
+    "prompt": "Tell one person what you would like to be predictable, such as the agenda or who speaks first, and ask whether they can arrange it or come in with you.",
+    "useWhen": "Someone involved has the ability to make part of the situation predictable.",
+    "checkIn": "Did knowing that part in advance reduce how much you rehearsed?",
+    "bringsIn": "flock"
+  },
+  {
+    "id": "filter-change-one-thing",
+    "familyId": "filter",
+    "title": "Change one input",
+    "prompt": "Identify the single sensory thing that bothers you most in this setting, such as a light, a seat or background noise, and change or request a change to that one thing.",
+    "useWhen": "The change is within your control or reasonable to ask for.",
+    "checkIn": "Was it easier to listen, enjoy yourself or stay? If nothing changed, that is useful to know too.",
+    "bringsIn": "fight"
+  },
+  {
+    "id": "filter-keep-what-works",
+    "familyId": "filter",
+    "title": "Keep the movement that works",
+    "prompt": "Choose one harmless movement or sensation that steadies you and allow it openly in one setting, without holding it back.",
+    "useWhen": "The movement causes no injury and the setting is reasonably accepting.",
+    "checkIn": "How much attention did you have left for the conversation compared with when you hold it back?",
+    "bringsIn": "flock"
+  },
+  {
+    "id": "flock-specific-ask",
+    "familyId": "flock",
+    "title": "Make the ask specific",
+    "prompt": "Next time you want company, name the form: “Could you sit nearby while I make this call?” or “Can I message you afterwards?”",
+    "useWhen": "You have someone you trust and they have said they are willing.",
+    "checkIn": "Which part of their presence mattered, and was it the amount you wanted?",
+    "bringsIn": "fathom"
+  },
+  {
+    "id": "flock-one-part-back",
+    "familyId": "flock",
+    "title": "Take one part back",
+    "prompt": "For something a helper usually handles with you, choose one small part you would like to do yourself while they stay available.",
+    "useWhen": "You want that part back, and stepping in would be easy if you changed your mind.",
+    "checkIn": "How did doing that part feel, and do you want more, less or the same next time?",
+    "bringsIn": "forearm"
+  },
+  {
+    "id": "float-reference-point",
+    "familyId": "float",
+    "title": "Choose a point of reference",
+    "prompt": "Pick one familiar thing you can turn to when a situation starts to feel far away: an object in your pocket, a particular voice, the date said aloud, or simply quiet.",
+    "useWhen": "The distance is unwelcome and you want something to change. If it keeps returning or frightens you, speak with a clinician as well.",
+    "checkIn": "Did it help, or would something different serve better? Either answer is information.",
+    "bringsIn": "filter"
+  },
+  {
+    "id": "float-planned-second-conversation",
+    "familyId": "float",
+    "title": "Plan a second conversation",
+    "prompt": "If you go numb partway through something important, ask to continue at a set time rather than deciding then. Write down where you got to.",
+    "useWhen": "The decision can wait and the other person will agree to return to it.",
+    "checkIn": "Were your feelings and preferences easier to reach the second time?",
+    "bringsIn": "forearm"
+  },
+  {
+    "id": "fathom-second-account",
+    "familyId": "fathom",
+    "title": "Write a second account",
+    "prompt": "Write three lines about the event: what you knew at the time, who had the power to choose, and what you would want someone you love to conclude in your place.",
+    "useWhen": "You have a few private minutes and the event is not so raw that writing about it overwhelms you.",
+    "checkIn": "Does the second account keep all the facts? Does it change who carries the responsibility?",
+    "bringsIn": "forearm"
+  },
+  {
+    "id": "fathom-one-witness",
+    "familyId": "fathom",
+    "title": "Ask one witness",
+    "prompt": "Ask one person you trust who was there, or who knows you well, to describe what they saw. Listen without correcting them.",
+    "useWhen": "There is someone whose view you would find believable.",
+    "checkIn": "Which part of their description did you find credible, and did it differ from your own?",
+    "bringsIn": "flock"
+  }
+]

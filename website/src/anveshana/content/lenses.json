@@ -1,0 +1,98 @@
+[
+  {
+    "id": "kula",
+    "position": 1,
+    "sanskrit": "Kula Sahasrāra",
+    "english": "Lower crown",
+    "plainLabel": "Roots and lineage",
+    "color": "#8a5a3c",
+    "represents": "Connection with earth, lineage and elemental life.",
+    "prompt": "If it is relevant to you, did connecting with land, lineage or a practice you chose help you feel continuity?",
+    "supports": "Access to a garden or a place that matters, a family tradition you choose, time with an elder, and the freedom to decline.",
+    "allowPrivate": true
+  },
+  {
+    "id": "muladhara",
+    "position": 2,
+    "sanskrit": "Mūlādhāra",
+    "english": "Root",
+    "plainLabel": "Ground and safety",
+    "color": "#c0392b",
+    "represents": "Ground, material safety, and a place you can stay or leave.",
+    "prompt": "Did you have a practically safe place to stay, rest or leave?",
+    "supports": "A door you control, a reliable person, stable housing and food, a chair, a known way out.",
+    "allowPrivate": false
+  },
+  {
+    "id": "svadhishthana",
+    "position": 3,
+    "sanskrit": "Svādhiṣṭhāna",
+    "english": "Sacral",
+    "plainLabel": "Sensation and preference",
+    "color": "#d9772b",
+    "represents": "Felt sensation, preference, movement and rhythm.",
+    "prompt": "Could you notice what sensation or movement you wanted more or less of?",
+    "supports": "Less noise, movement you choose yourself, and time to discover a preference.",
+    "allowPrivate": false
+  },
+  {
+    "id": "manipura",
+    "position": 4,
+    "sanskrit": "Maṇipūra",
+    "english": "Solar plexus",
+    "plainLabel": "Agency and boundaries",
+    "color": "#c79a10",
+    "represents": "Agency, boundaries and the ability to act on a choice.",
+    "prompt": "Could you say stop or change your mind and have that decision honored?",
+    "supports": "Someone who accepts a refusal, a workable exit, and access to your own money and time.",
+    "allowPrivate": false
+  },
+  {
+    "id": "anahata",
+    "position": 5,
+    "sanskrit": "Anāhata",
+    "english": "Heart",
+    "plainLabel": "Care and connection",
+    "color": "#3d8b57",
+    "represents": "Giving and receiving care, attachment and grief.",
+    "prompt": "Could you ask someone you trusted to share some of what you were carrying?",
+    "supports": "Shared responsibility, and company at a distance you choose.",
+    "allowPrivate": false
+  },
+  {
+    "id": "vishuddhi",
+    "position": 6,
+    "sanskrit": "Viśuddhi",
+    "english": "Throat",
+    "plainLabel": "Voice and being heard",
+    "color": "#2f7fb8",
+    "represents": "Expression, authorship and being heard.",
+    "prompt": "Could your message reach its listener in a form that worked for you?",
+    "supports": "More time, a written message, a gesture, an interpreter, or a listener who waits.",
+    "allowPrivate": false
+  },
+  {
+    "id": "ajna",
+    "position": 7,
+    "sanskrit": "Ajñā",
+    "english": "Brow",
+    "plainLabel": "Attention and interpretation",
+    "color": "#5b4bb0",
+    "represents": "Attention, interpretation and discernment.",
+    "prompt": "Could you check whether the signal you noticed meant what you first thought?",
+    "supports": "Accurate information, a second witness, and permission to ask.",
+    "allowPrivate": false
+  },
+  {
+    "id": "akula",
+    "position": 8,
+    "sanskrit": "Akula Sahasrāra",
+    "english": "Upper crown",
+    "plainLabel": "Awareness beyond the story",
+    "color": "#9a5fb5",
+    "represents": "Pure awareness and communion beyond the individual story.",
+    "prompt": "If you welcome the question, did quiet, prayer or another chosen practice bring a sense of awareness or communion beyond your individual story?",
+    "supports": "Chosen prayer or quiet, a trusted spiritual companion, or privacy.",
+    "allowPrivate": true
+  }
+]

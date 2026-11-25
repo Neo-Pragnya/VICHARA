@@ -1,0 +1,30 @@
+---
+// A bare page with nothing but the app. The post-build step
+// (scripts/anveshana-standalone.mjs) inlines its script to produce the
+// single-file version, so keep this page free of other assets.
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Anveshana: a private reflection on your protective patterns. Answers stay on your device." />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Anveshana · Explore your patterns</title>
+    <style is:inline>
+      html, body { margin: 0; min-height: 100%; background: #f7f4ee; }
+      anveshana-app { min-height: 100vh; }
+      @media (prefers-color-scheme: dark) { html, body { background: #131916; } }
+    </style>
+  </head>
+  <body>
+    <anveshana-app>
+      <noscript>Anveshana needs JavaScript to run. Your answers never leave this page.</noscript>
+    </anveshana-app>
+    <script>
+      import "../../anveshana/ui/anveshana-element";
+    </script>
+  </body>
+</html>
